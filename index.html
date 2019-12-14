@@ -56,7 +56,14 @@
 		<script src="vendor/modernizr/modernizr.min.js"></script>
 
 	</head>
-	<body>
+	<body class data-loading-overlay data-plugin-options="{hide-delay:500}">
+		<div class="loading-overlay">
+			<div class="bounce-loader">
+				<div class="bounce-1"></div>
+				<div class="bounce-2"></div>
+				<div class="bounce-3"></div>
+			</div>
+		</div>
 
 		<div class="body">
 			<header id="header" class="header-transparent header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
@@ -105,12 +112,13 @@
 				</div>
 			</header>
 
+			<!-- Video background -->
 			<div role="main" class="main">
 				<div class="slider-container rev_slider_wrapper" style="height: 100vh;">
 					<div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider data-plugin-options="{'sliderLayout': 'fullscreen', 'delay': 9000, 'gridwidth': 1170, 'gridheight': 1000, 'disableProgressBar': 'on', 'responsiveLevels': [4096,1200,992,500], 'parallax': { 'type': 'scroll', 'origo': 'enterpoint', 'speed': 1000, 'levels': [2,3,4,5,6,7,8,9,12,50], 'disable_onmobile': 'off' }}">
 						<ul>
 							<li class="slide-overlay" data-transition="fade">
-								<img src="img/features/banner-design.jpg"  
+								<img src="img/blank.gif"  
 									alt=""
 									data-bgposition="center center" 
 									data-bgfit="cover" 
@@ -159,7 +167,7 @@
 									data-transform_out="y:[100%];opacity:0;s:500;"
 									data-mask_in="x:0px;y:0px;" style="z-index: 5;"></a>
 
-								<div class="tp-dottedoverlay tp-opacity-overlay-light opacity-8"></div>
+								<div class="tp-dottedoverlay tp-opacity-overlay-light opacity-4"></div>
 							</li>
 						</ul>
 					</div>
